@@ -7,12 +7,12 @@ function script() {
     var BurgerName = document.getElementById("burgername");
 
 
-    myForm.addEventListener("submit", function (event) {
+    myForm.addEventListener("click", function (event) {
         event.preventDefault(); //impedisce il refresh del sito
         var form = event.currentTarget;
         var ingredients = form.elements;
         var arrayIngredientHTML = document.querySelectorAll("[value^='ingredient']")
-
+        console.log(arrayIngredientHTML);
         var arrayIngredient = new Array();
         for (var i = 0; i < arrayIngredientHTML.length; i++) {
             var x = ingredients.ingredient[i].value;
