@@ -14,78 +14,44 @@
 <body>
     <div class="container">
         <header>
-            <h1>Create Your Burger</h1>
+            <h1>Seleziona ingredienti</h1>
         </header>
         <main>
-            <div class="name-burger">
-                <input type="text" id="name" name="name" placeholder="Name Your Burger">
-            </div>
-
-            <h2 class="main-title">Ingredients</h2>
             <div class="ingredients">
-                <div class="ingredient">
-                    <img class="ingredient-image" src="img/cheese.svg" alt="Cheese">
-                    <label for="cheese">Cheese</label>
-                    <div class="checkbox">
-                        <input id="cheese-add" type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
-                        <label for="cheese-add">Add</label>
-                    </div>
-                </div>
-                <div class="ingredient">
-                    <img class="ingredient-image" src="img/tomato.svg" alt="Tomato">
-                    <label for="cheese">Tomato</label>
-                    <div class="checkbox">
-                        <input id="tomato-add" type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="tomato" value="2">
-                        <label for="tomato-add">Add</label>
-                    </div>
-                </div>
-                <div class="ingredient">
-                    <img class="ingredient-image" src="img/fried-egg.svg" alt="Egg">
-                    <label for="egg">Egg</label>
-                    <div class="checkbox">
-                        <input id="egg-add" type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="egg" value="3">
-                        <label for="egg-add">Add</label>
-                    </div>
-                </div>
-                <div class="ingredient">
-                    <img class="ingredient-image" src="img/lettuce.svg" alt="Lettuce">
-                    <label for="lettuce">Lettuce</label>
-                    <div class="checkbox">
-                        <input id="lettuce-add" type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="lettuce" value="4">
-                        <label for="lettuce-add">Add</label>
-                    </div>
-                </div>
                 <div class="ingredient">
                     <img class="ingredient-image" src="img/mustard.svg" alt="Mustard">
                     <label for="mustard">Mustard</label>
                     <div class="checkbox">
-                        <input id="mustard-add" type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="mustard" value="6">
-                        <label for="mustard-add">Add</label>
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="mustard" value="6">
+                        <label for="mustard-add"></label>
                     </div>
                 </div>
                 <div class="ingredient">
                     <img class="ingredient-image" src="img/ketchup.svg" alt="Ketchup">
                     <label for="ketchup">Ketchup</label>
                     <div class="checkbox">
-                        <input id="ketchup-add" type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="ketchup" value="1">
-                        <label for="ketchup-add">Add</label>
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="ketchup" value="1">
+                        <label for="ketchup-add"></label>
+                    </div>
+                </div>
+                <div class="ingredient">
+                    <img class="ingredient-image" src="img/cheese.svg" alt="Cheese">
+                    <label for="cheese">Cheese</label>
+                    <div class="checkbox">
+                        <input type="checkbox" class="ingredient-checkbox" name="ingredients[]" id="cheese" value="5">
+                        <label for="cheese-add"></label>
                     </div>
                 </div>
             </div>
 
-            <div class="discount">
-                <label for="coupon">Discount Coupon</label>
-                <input type="text" name="coupon" id="coupon" placeholder="12354ABCDEF">
-            </div>
-
             <div class="submit" onclick="script();">
-                <button id="button" class="btn">calculate</button>
+                <button id="button" class="btn">Bottone</button>
             </div>
         </main>
-        <footer>
-            <h2>Your Price</h2>
-            <div class="price-container">$ <span id="price"><strong>50</strong></span></div>
-        </footer>
+        <div class="popup" id="popup">
+            <h2>Lista ingredienti</h2>
+            <div class="output-container"><span id="output"><strong></strong></span></div>
+        </div>
     </div>
     <!-- <script src="js/script.js"></script> -->
     <script src="js/liveScript.js"></script>

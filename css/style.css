@@ -60,12 +60,11 @@
     content: '';
     width: 256px;
     height: 256px;
-    background-image: url(../img/burger-top.png);
-    background-repeat: no-repeat;
   }
   
   /* main */
   main {
+    position: relative;
     height: calc(100% - 240px);
     overflow: auto;
   }
@@ -182,17 +181,31 @@
     text-align: center;
   }
   
-  /* footer */
-  footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
+  /* popup */
+  .popup {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    z-index: 1;
     color: #ffffff;
     background-color: #d33359;
   }
+
+  .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
   
-  .price-container {
+  
+  .output-container {
     font-size: 200%;
     font-weight: bold;
   }
